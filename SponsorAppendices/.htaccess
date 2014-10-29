@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "SponsorAppendices "
+AuthUserFile "/home/irecruit/.htpasswds/public_html/HRTech-Amsterdam2014/SponsorAppendices/passwd"
+require valid-user

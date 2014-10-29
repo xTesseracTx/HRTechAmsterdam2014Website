@@ -1,0 +1,87 @@
+/*******************************************************************************************************
+This file serves as host for every custom CSS modification trough the HR Tech London 2015 event website 
+********************************************************************************************************/
+
+/*Mobile Wrapper*/
+#mobile-wrapper {
+	max-width: 520px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+/*Header Definitions*/
+#header-background {
+	width: 100%;
+	min-height: 415px;
+	background: url(../img/mobile/header-bg.jpg) no-repeat center;
+	background-size: cover;
+}
+#header-container {
+	margin-top: 65px;
+	padding: 50px 0;
+	text-align: center;
+}
+/*End of Header Definitions*/
+
+/*General class definitions*/
+.glegoo-text {
+	font-family: 'Glegoo', serif;
+}
+.ubuntu-text {
+	font-family: 'Ubuntu', sans-serif;
+}
+.blue {
+	color: #16aae1;
+}
+.white {
+	color: #fff;
+}
+a {
+	color: #000;
+}
+a:hover {
+	text-decoration: none;
+}
+.whitespace {
+	height: 50px;
+}
+.img-responsive {  
+	width: 100%;
+	height: auto;
+}  
+/*End General class definitions*/
+
+/*Black Footer Section*/
+.blackfooter-social-icon {
+	margin: 0 50px 0 0;
+	width: 30px;
+	height: 30px;
+}
+#facebook-icon {
+	background: url(../img/facebook-icon-black.png) no-repeat;
+	background-size: contain;
+}
+#facebook-icon:hover {
+	background: url(../img/facebook-icon-blue.png) no-repeat;
+}
+#twitter-icon {
+	background: url(../img/twitter-icon-black.png) no-repeat;
+	background-size: contain;
+}
+#twitter-icon:hover {
+	background: url(../img/twitter-icon-blue.png) no-repeat;
+}
+#linkedin-icon {
+	background: url(../img/linkedin-icon-black.png) no-repeat;
+	background-size: contain;
+}
+#linkedin-icon:hover {
+	background: url(../img/linkedin-icon-blue.png) no-repeat;
+}
+#flickr-icon {
+	background: url(../img/flickr-icon-black.png) no-repeat;
+	background-size: contain;
+}
+#flickr-icon:hover {
+	background: url(../img/flickr-icon-pink.png) no-repeat;
+}

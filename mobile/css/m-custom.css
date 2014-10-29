@@ -1,0 +1,775 @@
+/*******************************************************************************************************
+This file serves as host for every custom CSS modification trough the HR Tech London 2015 event website 
+********************************************************************************************************/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*Mobile Wrapper*/
+#mobile-wrapper {
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0;
+}
+.pattern {
+	width: 100%;
+	min-height: 365px;
+	background: url(../img/mobile/pattern-overlay.png) no-repeat center;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.25);
+	
+}
+
+
+/*End of Header Definitions*/
+
+/*General class definitions*/
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+.font-light {
+  font-weight: 300 !important;
+}
+.button-container {
+  max-width: 100%;
+  padding: 35px 20px;
+}
+.view-button {
+  background-color: #29a0c7;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight:400;
+  width: 100%;
+  height: 33px;
+  margin: 0 auto;
+  padding-top: 12px;
+}
+.view-button:hover {
+  background-color: #fc354c;
+}
+.button-small {
+  width: 200px;
+  text-transform: none;
+  position: relative;
+  top: -28px;
+}
+.button-download-the-app {
+  background-color: #f35a6e;
+  border: 2px solid #fc354c;
+  height: 31px;
+  padding-top: 8px;
+}
+#download-the-app-text {
+	font-size: 18px;
+	font-weight: 300;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px !important;
+  font-weight: 400 !important;
+  margin: 0 auto;
+  padding: 25px 0;
+  text-align: center;
+}
+sup {
+	position: relative;
+	top: 13px;
+	font-size: 40px;
+}
+.header-light {
+  color: #fff;
+}
+.header-dark {
+  color: #353535;
+}
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+table {
+	width: 100%;
+}
+.gm-style .place-card-large {
+  display: none;
+}
+i.fa-angle-right {
+	font-size: 20px;	
+}
+/*End General class definitions*/
+
+/* SIDR */
+#sidr-menu-container {
+  position: fixed;
+  z-index: 10;
+  margin-top: -65px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  height: 65px;
+  background-color: rgb(32, 32, 32);
+  border-bottom: 2px solid rgb(0, 0, 0)
+}
+#sidr {
+  min-width: 260px;
+}
+.sidr-menuitem a:hover {
+  color: rgb(40,194,231);
+}
+@media (min-width:360px) {
+  #sidr {
+    min-width: 300px;
+  }
+}
+@media (min-width:480px) {
+  #sidr {
+    min-width: 420px;
+  }
+}
+@media (min-width:520px) {
+  #sidr {
+    min-width: 460px;
+  }
+}
+@media (min-width:580px) {
+  #sidr {
+    min-width: 520px;
+  }
+}
+@media (min-width:640px) {
+  #sidr {
+    min-width: 580px;
+  }
+}
+#sidr li {
+  text-transform: uppercase;
+}
+#menu-hrtech-logo {
+  float: left;
+  margin: 10px;
+}
+#menu-bars {
+  width: 60px;
+  height: 63px;
+  float: right;
+  margin: 0 auto;
+  border-left: 1px solid rgb(91, 91, 91);
+  z-index: 11;
+}
+#menu-bars i {
+  padding: 17px;
+  color: rgb(91, 91, 91);
+}
+#menu-bars i:hover{
+  padding: 17px;
+  color: rgb(40, 194, 231);
+}
+#sidr img {
+  padding-left: 20px;
+}
+/* END: SIDR */
+
+/* HEADER */
+#header-background {
+	width: 100%;
+	min-height: 365px;
+	background: url(../img/mobile/header-bg.jpg) no-repeat center;
+	background-size: cover;
+}
+#header-background .black-transparent-layer, #header-background .non-transparent-layer {
+	height: 365px;
+	margin-top: 65px;
+}
+#header-container {
+	margin-top: 65px;
+	padding: 65px 0;
+	text-align: center;
+}
+#header-unleash-your-people {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 40px !important;
+  color: #fff !important;
+  text-transform: uppercase !important;
+  line-height: 45px !important;
+  margin-top: 65px !important;
+  padding-top: 40px !important;
+}
+#header-fastest-growing {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 24px !important;
+  color: white !important;
+  line-height: 30px !important;
+  margin: 0 !important;
+  text-align: center !important;
+}
+.header-button {
+  background-color: #f35a6e;
+}
+/* END HEADER */
+
+/*COLORED STRIPES*/
+.colors-wrapper {
+	width:100%;
+        height: 8px;
+}	
+.colored-stripe{
+	height:8px;
+	width:25%;
+        float: left;
+}
+.red {background:#fc354c;}	
+.orange {background:#ff8e2d;} 
+.green{background:#8fbe00;}
+.blue {background:#29a0c7;}			
+/*END: COLORED STRIPES*/
+
+/* SPEAKERS */
+#speakers-container {
+  text-align: center;
+  background-color: rgb(6, 34, 44);
+  margin: 0 auto;
+  max-width: 640px;
+  padding-bottom:1px;
+}
+
+.speakers-element {
+  max-width: 100%;
+  margin: 20px auto 0 auto;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.speaker-photo img {
+  width: 100%;
+  height: auto;
+}
+#last-speaker {
+  margin-bottom: 0;
+}
+.speaker-name {
+  font-family: 'Oswald', 'Ubuntu', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: #06222c;
+}
+.speaker-company {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #353535;
+}
+/* SPEAKERS */
+
+/* SPONSORS */
+#sponsors-container {
+  max-width: 640px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #fff;
+}
+.titanium-sponsor {
+	width:200px;
+	height:auto;
+	display:inline-block;
+	cursor:pointer;
+	margin:10px 25px;
+		}
+/* END: SPONSORS*/
+
+/* TWEETER */
+#tweeter-container {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: 35px;
+  background-color: #07232d;
+  font-family: 'Roboto', sans-serif;
+}
+#tweeter-title {
+	padding: 15px 0 10px 0;
+}
+#tweeter-powered-by {
+	width: 220px;
+	font-weight: 300;
+	font-size: 16px;
+	color: #fff;
+	margin: 5px auto;
+	padding-bottom: 10px;
+}
+#tweeter-powered-by span {
+	position: relative;
+	top: -10px;
+}
+#letter-spacing {
+	letter-spacing: 40px;
+}
+/*** TWITTER***/
+
+#twitter-container{
+	width:100%;
+	background:#07232d;
+	
+	
+	}
+
+#twitterfollow-button{
+	width:200px; 
+	background:#106582;
+	border:2px solid #29a0c7;
+	color:white;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 18px;
+	}
+#twitterfollow-button:hover {
+		background:#29a0c7;
+	}	
+#twitter-main-container{
+display:flex; flex-flow:row;
+-webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-top: 0px;
+	}
+#bird-text{
+max-width:740px; display:flex; flex-direction:row; margin:165px 0 0 0;
+	}	
+#twitter-tirangle {
+width: 0; 
+	height: 0; 
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent; 
+	
+	border-right:15px solid #29a0c7; position:relative;  left:-14px; top:150px;
+	}		
+@media (max-width:1500px){
+	#twitter-main-container{
+display:flex; flex-flow:column-reverse;
+	}	
+#bird-text{
+	margin:0 auto;
+	margin-top:40px;
+	}
+#twitter-tirangle {
+	width: 0; 
+	height: 0; 
+		border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	
+	border-top: 20px solid #29a0c7; 
+
+	
+ left:45%; top:482px;
+	}			
+	
+}
+@media (max-width:460px){
+	#twitter-tirangle {
+		top:525px;
+	}
+
+}
+#twitter-hrtecheurope {
+	float:left; font-size:30px;
+}
+#twitter-powered-by-sdworx {
+	float:right;
+}
+@media (max-width:460px){
+	#twitter-hrtecheurope {
+		float: none;
+		text-align: center;
+	}
+	#twitter-powered-by-sdworx {
+		float:none;
+		text-align: center;
+	}	
+}
+.icon-twitter {
+	font-size:200px;
+	color:#fff;
+}
+@media (max-width:480px) {
+	.icon-twitter {
+		font-size: 100px;
+	}
+}
+#twitter-text-container {
+	margin-left:50px; max-width:500px;
+}
+#twitter-text {
+	font-weight:300; font-size:18px; text-align:left; line-height:35px; color:#fff;
+}
+@media (max-width:360px) {
+	.icon-twitter {
+		display: none;
+	}
+	#twitter-text {
+		line-height: 24px;
+	}
+	#twitter-text-container {
+		margin-left: 0;
+	}
+}
+/***END TWITTER***/
+
+
+/* END: TWEETER */
+
+/* Twitter Section */
+#twitter-widget-0 {
+	width: 100% !important;
+	border-radius: 0px;
+}
+#social-powered {
+	text-align: right;
+	position: absolute;
+	right: 20px;
+}
+/*END Twitter Section */
+
+/* SESSIONS */
+#sessions-container {
+  max-width: 640px;
+}
+#sessions-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #666;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0 auto 25px auto;
+}
+/* END: SESSIONS */
+
+/* DISRUPTHR */
+#disrupthr-container {
+  max-width: 640px;
+  background-color: #06222c;
+}
+#disrupthr-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0 auto 25px auto;
+}
+/* DISRUPTHR */
+
+/* VIDEOS */
+#video-container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+#video-container .slick-slide {
+	position: relative;
+	left: -30px;
+}
+.video-image img {
+  margin: 0 auto;
+  /*margin-left: 20px;*/
+}
+.video-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding: 30px 0 0px 20px;
+  margin: 0 auto;
+  text-align: left;
+  text-transform: uppercase;
+  color: #353535;
+}
+#video-container .slick-dots {
+	display: none !important;
+}
+/* END: VIDEOS*/
+
+/* TESTIMONIALS */
+#testimonials-container {
+  background-color: #06222c;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+#testimonials-quote-sign img {
+  margin: 50px auto 0 auto;
+}
+.testimonials-quote {
+  max-width: 620px;
+  line-height: 150px;
+  margin: 0 20px;
+}
+.testimonials-quote p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  text-align: center;
+  margin: 50px auto 40px auto;
+}
+.testimonials-logo {
+  height: 60px;
+  line-height: 60px;
+}
+.testimonials-logo img {
+  margin: 0 auto;
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+  opacity: 0.8;
+}
+#testimonials-carousel .slick-dots li button:before {
+  color: rgb(255, 255, 255);
+}
+/* END TESTIMONIALS*/
+
+/* VENUE */
+#venue-container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-weight: 300;
+  background-color: #fff;
+  text-align: center;
+}
+#venue-container-title {
+  margin: -10px 0 0 0;
+  padding: 0 0 20px 0;
+}
+#venue-container p {
+  color: #353535;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+.venue-button {
+  margin: 30px 0;
+}
+#google-maps-location-box {
+  width: 250px;
+  margin:0 auto;
+  margin-top:20px;
+  margin-bottom:20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: #1fb3e6;
+  z-index: 9;
+  background-color: #f6f5f4;
+  opacity: 0.85;
+}
+#view-in-google-maps {
+  background-color: #3dbae5;
+  font-size: 24px;
+  color: #fafdfe;
+  padding: 10px 0;
+}
+#amsterdam-rai {
+  padding: 5px 0;
+ 
+}
+#google-maps-amsterdam {
+  width: 100%;
+  height: auto;
+}
+#venue-container .button-container {
+  padding: 35px 0px;
+}
+/* END: VENUE */
+
+/*STATISTICS*/
+#statistics-background{
+	width: 100%;
+	min-height: 400px;
+	background: url(../img/mobile/statistics-bg.jpg) no-repeat center;
+	background-size: cover;
+}
+#statistics-container table {
+	width: 100%;
+	height: 400px;
+	text-align: center;	
+}
+.red-text {color: #fc354c;}
+.green-text {color: #8fbe00;}
+.blue-text {color: #29a0c7;}
+.orange-text {color: #ff8e2d;}
+.statistics-number {
+	font-family: 'Roboto', sans-serif;
+	font-size: 72px;
+	font-weight: 500;
+}
+span.smaller-letter-spacing {
+	letter-spacing: -5px;
+}
+.statistics-text {
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 5px;
+}
+/*END: STATISTICS*/
+
+/* CONTACT */
+#contact-container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  color: rgb(53, 53, 53);
+  background-color: #e5e5e5;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+#contact-container a {
+	color: #353535;
+}
+#contact-title {
+  border-bottom: 1px solid rgb(128, 128, 128);
+}
+#contact-signup {
+  padding: 10px 0 15px 0;
+  border-bottom: 1px solid rgb(128, 128, 128);
+  margin: 0 auto;
+  font-weight: 400;
+}
+#contact-signup p{
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+#newsletter-signupfield-amsterdam {
+  width: 85%;
+  height: 45px;
+  padding-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #202020;
+  border: 1px solid #808080;
+}
+#newsletter-submit-button {
+  width: 15px;
+  position: relative;
+  top: 7px;
+}
+#contact-follow {
+  font-weight: 400;
+  font-size: 20px;
+  border-bottom: 1px solid rgb(128, 128, 128);
+  margin: 0 auto;
+}
+#contact-follow p{
+  margin-top: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+#socialicons {
+  width: 180px;
+  margin: 0 auto 30px auto;
+}
+.contact-social-icon {
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+}
+#twitter-and-hashtag {
+  background: url('../img/twitter-icon-black.png') no-repeat;
+  background-position: left center;
+  width: 190px;
+  margin: 0 auto 20px auto;
+  font-weight: 400;
+  position: relative;
+  left: 10px;
+}
+#twitter-and-hashtag:hover {
+  background: url('../img/twitter-icon-blue.png') no-repeat;
+  background-position: left center;
+  color: #2fa8ff;
+}
+#contact-general-enquiries p{
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 280px;
+  margin: 25px auto 0 auto;
+  padding-bottom: 25px;
+}
+
+#image-phone, #image-envelope {
+  margin-right: 3px;
+}
+#image-envelope {
+  margin-right: 7px;
+}
+#facebook-icon {
+	background: url(../img/facebook-icon-black.png) no-repeat;
+	background-size: contain;
+}
+#facebook-icon:hover {
+	background: url(../img/facebook-icon-blue.png) no-repeat;
+}
+#linkedin-icon {
+	background: url(../img/linkedin-icon-black.png) no-repeat;
+	background-size: contain;
+}
+#linkedin-icon:hover {
+	background: url(../img/linkedin-icon-blue.png) no-repeat;
+}
+#flickr-icon {
+	background: url(../img/flickr-icon-black.png) no-repeat;
+	background-size: contain;
+}
+#flickr-icon:hover {
+	background: url(../img/flickr-icon-pink.png) no-repeat;
+}
+/* END: CONTACT */
+
+/* FOOTER */
+#footer {
+  max-width: 640px;
+  text-align: center;
+  height: 35px;
+  background-color: rgb(32, 32, 32);
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  color: rgb(134, 127, 127);
+  padding-top: 20px;
+}
+/* END: FOOTER */
+
+/*MODAL*/
+.reveal-modal {
+	width: 100%;
+}
+.reveal-modal h2{
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 50px;
+}
+/*END: MODAL*/

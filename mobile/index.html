@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content=" HR Tech Europe, HR Conference" />
+<meta name="description" content="HR Tech Europe 2014 brings together the world's leading HR thinkers and organizations in Europe over 2 days in Amsterdam.">
+<meta name="author" content="TesseracT - bottyan.tamas@web-developer.hu">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="HandheldFriendly" content="true" />
+<title>HR Tech Europe 2015 | Europe's #1 Conference on the Future of HR</title>
+
+<!-- Hover effects -->
+<link href="css/hover.css" rel="stylesheet">
+<!--Google fonts-->
+<link href='http://fonts.googleapis.com/css?family=Glegoo:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bitter:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,100' rel='stylesheet' type='text/css'>
+<!--Icon set-->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css">
+<!-- Custom rules -->
+<link href="css/m-custom.css" rel="stylesheet">
+<script type="text/javascript">
+if ( (screen.width > 650)  ) { 
+    window.location = 'http://amsterdam.hrtecheurope.com';
+    } 
+
+
+
+</script>
+
+
+
+<!-- SLICK-MASTER CAROUSEL INCLUDES -->
+<link rel="stylesheet" type="text/css" href="vendor/slick-master/slick/slick.css" media="screen"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+
+<!-- Include Sidr bundled CSS theme -->
+<link rel="stylesheet" href="vendor/sidr/stylesheets/jquery.sidr.dark.css">
+
+<!-- SLICK-MASTER CAROUSEL -->
+<script src="js/slick-master-carousel.js"></script>
+
+<!-- SIDR RIGHT MENU -->
+<script src="js/sidr-right-menu.js"></script>
+
+<!-- W3C FORM VALIDATOR -->
+<script>
+  function validateForm() {
+    var x = document.forms["newsletter-signup-form"]["newsletter-email-address"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+}
+</script>
+<!-- END: W3C FORM VALIDATOR -->
+
+<!--GOOGLE MAPS-->
+   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+        
+        <script type="text/javascript">
+           
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                
+                var mapOptions = {
+   
+                    zoom: 12,
+                    scrollwheel: false,     
+                    
+                    center: new google.maps.LatLng(52.339364,4.892667), 
+
+                  
+                    styles: [{featureType:"landscape.natural",elementType:"geometry.fill",stylers:[{"visibility":"on"},{"color":"#e0efef"}]},{featureType:"poi",elementType:"geometry.fill",stylers:[{"visibility":"on"},{"hue":"#1900ff"},{"color":"#c0e8e8"}]},{buildingsfeatureType:"landscape.man_made",elementType:"geometry.fill"},{featureType:"road",elementType:"geometry",stylers:[{lightness:100},{visibility:"simplified"}]},{featureType:"road",elementType:"labels",stylers:[{visibility:"off"}]},{featureType:'water',stylers:[{color:'#7dcdcd'}]},{featureType:'transit.line',elementType:'geometry',stylers:[{visibility:'on'},{lightness:700}]}]
+                };
+
+                var mapElement = document.getElementById('the-map');
+
+                
+                var map = new google.maps.Map(mapElement, mapOptions);
+				
+				var marker=new google.maps.Marker({
+  position:new google.maps.LatLng(52.339364,4.892667),
+  animation:google.maps.Animation.BOUNCE,
+  icon:'http://amsterdam.hrtecheurope.com/img/mainpage/gmap-marker.png'
+  });
+
+marker.setMap(map);
+
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(14);
+  map.setCenter(marker.getPosition());
+  });
+}
+
+            
+        </script>
+
+        <!--END GOOGLE MAPS-->
+
+<style type="text/css">
+.counters strong {
+	font-weight:500;
+	}
+
+
+  /*SLICK-MASTER*/
+.slick-dots { /*aligning the carousel dots*/
+  padding-top: 5px;
+  padding-bottom: 35px;
+  margin-bottom: 0;
+  position: static;
+}
+.slick-dots li button:before { /*change the size of the dots*/
+  font-size: 12px;
+}
+.slick-dots li.slick-active button:before{ /*opacity of the active panel's dot*/
+  opacity: 1;
+}
+.slick-dots li{ /*defines the GAP between carousel dots*/
+  margin: 0 0px;
+}
+/*END: SLICK-MASTER*/
+
+
+
+
+
+</style>
+
+<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-animate.css">
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skins/default.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="css/theme-responsive.css" />
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr.js"></script>
+
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+
+ 
+        <link rel="stylesheet"  type="text/css" href="style.css" />
+        
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-51971000-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</head>
+
+<body>
+<!-- MOBILE WRAPPER -->
+<div id="mobile-wrapper">
+  <div id="sidr-menu-container">
+    <div id="menu-hrtech-logo"><a href="index"><img src="img/hrtech-mobile-logo.png" alt="HR Tech Europe 23-24 October 2014"></a></div>
+    <div id="menu-bars"><a id="right-menu" href="#sidr"><i class="fa fa-bars fa-2x"></i></a></div>
+  </div>
+  <!-- SIDR MENU -->
+  <div id="sidr">
+    <ul>
+      <li class="sidr-menuitem"><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'InternalForward', 'MainPage']);" href="http://amsterdam.hrtecheurope.com">Home</a></li>
+      <li class="sidr-menuitem"><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'InternalForward', 'About']);" href="http://amsterdam.hrtecheurope.com/about">About</a></li>
+      <li class="sidr-menuitem"><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'InternalForward', 'Speakers']);" href="http://amsterdam.hrtecheurope.com/speakers">Speakers</a></li>
+      <li class="sidr-menuitem"><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'InternalForward', 'Agenda']);" href="http://amsterdam.hrtecheurope.com/agenda">Agenda</a></li>
+      <li class="sidr-menuitem" style="text-transform: none;"><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'InternalForward', 'disruptHR']);" href="http://amsterdam.hrtecheurope.com/disrupthr">disruptHR</a></li>
+      <li class="sidr-menuitem"><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'InternalForward', 'SponsorS']);" href="http://amsterdam.hrtecheurope.com/sponsor">Sponsors</a></li>
+      <li class="sidr-menuitem"><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'InternalForward', 'MediaPartners']);" href="http://amsterdam.hrtecheurope.com/media-partners">Media Partners</a></li>
+      <li class="sidr-menuitem"><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'InternalForward', 'BlogSquad']);" href="http://amsterdam.hrtecheurope.com/blogsquad">Blog Squad</a></li>
+      <li class="sidr-menuitem"><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'InternalForward', 'Venue']);" href="http://amsterdam.hrtecheurope.com/venue">Amsterdam Rai</a></li>
+      <li class="sidr-menuitem"><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'InternalForward', 'Logistics']);" href="http://amsterdam.hrtecheurope.com/logistics">Logistics</a></li>
+      <li class="sidr-menuitem"><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'InternalForward', 'Ticekts']);" href="http://amsterdam.hrtecheurope.com/tickets">Register Now!</a></li>
+        </ul>
+      <img id="sidr-hrtech-logo" src="img/mobile/hrtech-full-logo.png" alt="HR Tech Europe 2014">
+  </div>
+  <!-- END: SIDR MENU -->
+<!-- HEADER -->
+<div id="header-background">
+  <div class="pattern">
+    
+        <div class="header-container">
+          <h1 id="header-unleash-your-people">Unleash<br> your<br> people!</h1>
+          <div id="header-fastest-growing">The Fastest<br>Growing<br>HR Conference<br> in the World!</div>
+        </div>
+      </div>
+  
+</div>
+<!-- END HEADER -->
+<!-- COLORED STRIPES -->
+     <div class="colors-wrapper">
+      <div class="colored-stripe red"></div>
+      <div class="colored-stripe orange"></div>
+      <div class="colored-stripe green"></div>
+      <div class="colored-stripe blue"></div>
+    </div>
+<!-- END: COLORED STRIPES -->
+  <div class="button-container">
+  <a onClick="_gaq.push(['_trackEvent', 'InternalForward', 'MainPageButton', 'MobileApp']);" href="https://amsterdam.hrtehceurope.com/mobileapp"><div class="view-button button-download-the-app">Download The App <i class="fa fa-angle-right"></i></div></a>
+  </div>
+  <div id="download-the-app-text">
+    <p class="roboto-text">The <strong>HR Tech Europe app</strong> is the best way to find event information, track your schedule and connect with other attendees.</p>
+  </div>
+<!-- SPEAKERS -->
+<div id="speakers-container">
+  <h1 id="speakers-title" class="header-light">Speakers</h1>
+  <!-- GARY HAMEL -->
+  <div class="speakers-element">
+    <div class="speaker-photo"><img src="img/speakers/HamelG.jpg" alt="Gary Hamel photo"></div>
+    <div class="speaker-name">Gary Hamel</div>
+    <div class="speaker-company">The Management Lab</div>
+  </div>
+  <!-- END: GARY HAMEL -->
+  <!-- DAVID MCCANDLESS -->
+  <div class="speakers-element">
+    <div class="speaker-photo"><img src="img/speakers/McCandlessD.jpg" alt="David McCandless photo"></div>
+    <div class="speaker-name">David McCandless</div>
+    <div class="speaker-company">Information is Beautiful</div>
+  </div>
+  <!-- END: DAVID MCCANDLESS -->
+  <!-- YVONNE AGYEI -->
+  <div class="speakers-element">
+    <div class="speaker-photo"><img src="img/speakers/AgyeiY.jpg" alt="Yvonne Agyei photo"></div>
+    <div class="speaker-name">Yvonne Agyei</div>
+    <div class="speaker-company">Google</div>
+  </div>
+  <!-- END: YVONNE AGYEI -->
+  <!-- MARK TURRELL -->
+  <div class="speakers-element" id="last-speaker">
+    <div class="speaker-photo"><img src="img/speakers/TurrellM.jpg" alt="Mark Turrell photo"></div>
+    <div class="speaker-name">Mark Turrell</div>
+    <div class="speaker-company">Orcasci</div>
+  </div>
+  <!-- END: MARK TURRELL -->
+  <div class="button-container">
+    <a onClick="_gaq.push(['_trackEvent', 'InternalForward', 'MainPageButton', 'Speakers']);" href="http://amsterdam.hrtecheurope.com/speakers"><div class="view-button view-button-dark">View all speakers</div></a>
+  </div>
+</div>
+<!-- END SPEAKERS -->
+
+
+<!-- SPONSORS -->
+    <div id="sponsors-container">
+	<h1 id="sponsors-title" class="header-dark">Sponsors</h1>
+
+	  
+          <!--<div id="titanium-sponsors"> <a href="http://amsterdam.hrtecheurope.com/sponsor#ibm">
+            <div class="titanium-sponsor" style="background:url(img/mobile/sponsors/logos/200x200_logos_ibm.png); background-size:contain;"></div>
+            </a> <a href="http://amsterdam.hrtecheurope.com/sponsor#oracle">
+            <div class="titanium-sponsor" style="background:url(img/mobile/sponsors/logos/200x200_logos_oracle.png); background-size:contain;"></div>
+            </a> <a href="http://amsterdam.hrtecheurope.com/sponsor#kronos">
+            <div class="titanium-sponsor" style="background:url(img/mobile/sponsors/logos/200x200_logos_kronos.png); background-size:contain;"></div>
+            </a> <a href="http://amsterdam.hrtecheurope.com/sponsor#workday">
+            <div class="titanium-sponsor" style="background:url(img/mobile/sponsors/logos/200x200_logos_workday.png); background-size:contain;"></div>
+            </a> <a href="http://amsterdam.hrtecheurope.com/sponsor#successfactors">
+            <div class="titanium-sponsor" style="background:url(img/mobile/sponsors/logos/200x200_logos_successfactors.png); background-size:contain;"></div>
+            </a> <a href="http://amsterdam.hrtecheurope.com/sponsor#cornerstone">
+            <div class="titanium-sponsor" style="background:url(img/mobile/sponsors/logos/200x200_logos_cornerstone.png); background-size:contain;" ></div>
+            </a> </div>-->
+	    <table>
+		<tr>
+		  <td><a href="http://amsterdam.hrtecheurope.com/sponsor#Cornerstone" target="_blank"><img class="responsive-image" src="img/mobile/sponsors/cornerstone.png" alt="Cornerstone OnDemand"></a></td>
+		  <td><a href="http://amsterdam.hrtecheurope.com/sponsor#IBM" target="_blank"><img class="responsive-image" src="img/mobile/sponsors/ibm.png" alt="IBM"></a></td>
+		</tr>
+		<tr>
+		  <td><a href="http://amsterdam.hrtecheurope.com/sponsor#Kronos" target="_blank"><img class="responsive-image" src="img/mobile/sponsors/kronos.png" alt="Kronos"></a></td>
+		  <td><a href="http://amsterdam.hrtecheurope.com/sponsor#Oracle" target="_blank"><img class="responsive-image" src="img/mobile/sponsors/oracle.png" alt="Oracle"></a></td>
+		</tr>
+		<tr>
+		  <td><a href="http://amsterdam.hrtecheurope.com/sponsor#successfactors" target="_blank"><img class="responsive-image" src="img/mobile/sponsors/successfactors.png" alt="SuccessFactors"></a></td>
+		  <td><a href="http://amsterdam.hrtecheurope.com/sponsor#workday" target="_blank"><img class="responsive-image" src="img/mobile/sponsors/workday.png" alt="Workday"></a></td>
+		</tr>
+	      </table>
+	  
+          <div class="button-container">
+    <a onClick="_gaq.push(['_trackEvent', 'InternalForward', 'MainPageButton', 'Sponsors']);" href="http://amsterdam.hrtecheurope.com/sponsors"><div class="view-button view-button-dark">View all sponsors</div></a>
+  </div>
+          <div class="wp10"></div>
+    </div>  
+<!--END SPONSORS--> 
+
+<style type="text/css">
+    .random-tweet {
+	display: none;
+    }
+</style>
+<!--TWITTER-->
+        <div id="twitter-container" >
+          <h1 class="centered-text" style="font-family:'Oswald', sans-serif; font-weight:normal; color:#fff; padding-bottom: 0;">Join Our Social Community</h1>
+          <div id="twitter-main-container" >
+            <div id="bird-text">
+              <div ><i class="icon icon-twitter"></i></div>
+              <div id="twitter-text-container" class="random-tweet">
+                <p id="twitter-text" class="roboto-text"> The world of <a href="https://twitter.com/search?q=%23talent&src=typd" target="_blank">#talent,</a> <a href="https://twitter.com/search?q=%23learning&src=typd" target="_blank">#learning,</a><a href="https://twitter.com/search?q=%23technology&src=typd" target="_blank"> #technology</a> and thought <a href="https://twitter.com/search?q=%23leadership&src=typd" target="_blank"> #leadership</a> <a href="http://t.co/6Viu48FMW4" target="_blank">http://t.co/6Viu48FMW4</a> See you at <a href="https://twitter.com/search?q=%23HRTechEurope&src=typd" target="_blank"> #HRTechEurope</a> <br>
+                  <a href="http://t.co/Qt1WsB7r4k" target="_blank"> http://t.co/Qt1WsB7r4k</a> </p>
+                </div>
+              <div id="twitter-text-container" class="random-tweet">
+                <p id="twitter-text" class="roboto-text"><a href="https://twitter.com/hashtag/Gamification?src=hash" target="_blank">#Gamification</a> can reduce pre-start dropouts, says HCL CHRO <a href="http://t.co/ZVSrfMKbyw" target="_blank">http://bit.ly/1qjM4PD</a> Meet <a href="https://twitter.com/shergillprithvi" target="_blank">@shergillprithvi</a> at <a href="https://twitter.com/hashtag/hrtecheurope?src=hash" target="_blank">#hrtecheurope</a></p>
+              </div>	      
+              <div id="twitter-text-container" class="random-tweet">
+                <p id="twitter-text" class="roboto-text">Creating trends! Let the <a href="https://twitter.com/hashtag/countdown?src=hash" target="_blank">#countdown</a> begin! <a href="http://t.co/nQ4xTe2nM1" target="_blank">http://bit.ly/1nROCP2</a> <a href="https://twitter.com/hashtag/hrtecheurope?src=hash" target="_blank">#hrtecheurope</a> <a href="https://twitter.com/hashtag/disruptHRtech?src=hash" target="_blank">#disruptHRtech</a> <a href="https://twitter.com/hashtag/thwconf?src=hash">#thwconf</a> <a href="https://twitter.com/hashtag/hris?src=hash" target="_blank">#hris</a> <a href="https://twitter.com/hashtag/thwrn?src=hash" target="_blank">#thwrn</a></p>
+              </div>
+              <div id="twitter-text-container" class="random-tweet">
+                <p id="twitter-text" class="roboto-text">Everything you wanted to know about <a href="https://twitter.com/hashtag/hrtech?src=hash" target="_blank">#hrtech</a>, <a href="https://twitter.com/hashtag/socialmedia?src=hash" target="_blank">#socialmedia</a>, <a href="https://twitter.com/hashtag/employeeengagement?src=hash" target="_blank">#employeeengagement</a>, <a href="https://twitter.com/hashtag/learning?src=hash" target="_blank">#learning</a>, <a href="https://twitter.com/hashtag/recruitment?src=hash" target="_blank">#recruitment</a> <a href="http://t.co/ZtBEvLHfVB" target="_blank">http://bit.ly/1kG6rpB</a>  <a href="https://twitter.com/hashtag/hrtecheurope?src=hash" target="_blank">#hrtecheurope</a></p>
+              </div>
+              <div id="twitter-text-container" class="random-tweet">
+                <p id="twitter-text" class="roboto-text">Thanks for your time this AM! Very stoked to have <a href="https://twitter.com/SpringestUK" target="_blank">@SpringestUK</a> &amp; <a href="https://twitter.com/SpringestNL" target="_blank">@SpringestNL</a> on board for <a href="https://twitter.com/hrtecheurope" target="_blank">@hrtecheurope</a> <a href="https://twitter.com/hashtag/hrtecheurope?src=hash" target="_blank">#hrtecheurope</a> <a href="https://twitter.com/hashtag/hrdisrupt?src=hash" target="_blank">#hrdisrupt</a></p>
+              </div>
+              <div id="twitter-text-container" class="random-tweet">
+                <p id="twitter-text" class="roboto-text">Looking at agenda for <a href="https://twitter.com/hrtecheurope" target="_blank">@hrtecheurope</a> in Oct: <a href="http://t.co/3m78x1CJEQ" target="_blank">http://ow.ly/AOLWz</a>  Lots to choose from! What are your must-sees? <a href="https://twitter.com/hashtag/hrtecheurope?src=hash" target="_blank">#hrtecheurope</a></p>
+              </div>
+              <div id="twitter-text-container" class="random-tweet">
+                <p id="twitter-text" class="roboto-text">99+ World-renowned Thought Leaders under one roof at <a href="https://twitter.com/hashtag/hrtecheurope?src=hash" target="_blank">#hrtecheurope</a> <a href="http://t.co/DECDwhWDXv" target="_blank">http://bit.ly/1ptLHl4</a> </p>
+              </div>	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+            </div>		
+		
+            <div style="max-width:906px; width:100%; background:#07232d !important; display:flex; flex-direction:column; flex-wrap:no-wrap; ">
+              <div id="twitter-tirangle"></div>
+              <div style="background-color:#07232d !important; margin-bottom:25px;">
+		<a href="https://twitter.com/search?q=%23HRTechEurope&src=typd" target="_blank"><div id="twitter-hrtecheurope" class="oswald-text">#hrtecheurope</div></a>
+		<div id="twitter-powered-by-sdworx"><img src="img/mobile/tweeter/powered-by-horizontal.png" alt="powered by sdworx"></div>
+	    </div>
+              <!--The Twitter Plugin-->
+              
+              <div style="height:370px; background:#fff; border:4px solid #29a0c7;">
+                <div style="width:100%; height:50px; background:#e5e5e5; padding:8px 0"> <span class="roboto-text" style="font-size:24px; float:left; padding-left: 20px; padding-top: 8px;">Tweets</span> <span style="font-size:24px; float:right;"><i class="fa fa-twitter" style="padding-right: 20px; padding-top: 14px;"></i></span> </div>
+                <a class="twitter-timeline"  height="300"  data-chrome="noheader nofooter noborders tansparent" data-dnt="true" href="https://twitter.com/hashtag/hrtecheurope" data-widget-id="461485618808102913">#hrtecheurope Tweets</a> 
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script> 
+                
+                <!--END The Twitter Plugin--> 
+                
+              </div>
+	    </div>
+          </div>
+	  <div style="width: 100%; padding-bottom: 30px;"><a onClick="_gaq.push(['_trackEvent', 'MainpageButton', 'ExternalForward', 'Twitter']);" href="https://twitter.com/hrtecheurope/" target="_blank"><div class="btn btn-md" id="twitterfollow-button">FOLLOW US</div></a></div>
+        </div>
+        
+<!--END TWITTER --> 
+<!-- SESSIONS -->
+<div id="sessions-container">
+  <h1 id="sessions-title" class="header-dark">Sessions</h1>
+  <p id="sessions-text">Responding to delegate interests and requests we have expanded the scope and range of the 2014 agenda. With 9 tracks themed on Learning, Talent Management, HR Technology, Outsourcing & Shared Services, the Cloud, Social Enterprise, Future of Work plus Product Demonstrations and focused Round Table Labs and Master Classes everything is up for discussion at HR Tech Europe 2014.</p>
+  <img class="responsive-image" src="img/mobile/sessions-image.jpg" alt="Sessions">
+  <a href="http://amsterdam.hrtecheurope.com/agenda"><div class="view-button view-button-dark button-small">View Agenda &nbsp;<i class="fa fa-angle-right"></i></div></a>
+</div>
+<!-- END: SESSIONS -->
+
+<!-- DISRUPTHR -->
+<div id="disrupthr-container">
+  <h1 id="disrupthr-title" class="header-light">disruptHR</h1>
+  <p id="disrupthr-text">This year we have developed something new; an Innovations Zone where the start-up community and globally acknowledged venture capitalists, consultants, advisors, and thought leaders share their insights on the future of HR; join them as they step into the Zone for their exciting 15 minute show &amp; tell sessions throughout the 2 days.</p>
+  <img class="responsive-image" src="img/mobile/disrupthr-image.jpg" alt="Sessions">
+  <a onClick="_gaq.push(['_trackEvent', 'MainpageButton', 'InternalForward', 'DisruptHR']);" href="http://amsterdam.hrtecheurope.com/disrupthr"><div class="view-button view-button-dark button-small">View disruptHR &nbsp;<i class="fa fa-angle-right"></i></div></a>
+
+
+
+
+
+
+</div>
+<!-- END: DISRUPTHR -->
+
+<!-- VIDEOS -->
+<div id="video-container">
+  <h1 id="video-container-title" class="header-dark">Videos</h1>
+  <div class="video-carousel slick-master-carousel-center">
+    <!-- HR TECH EUROPE TEASER -->
+    <div class="video-element">
+      <div class="video-image"><a onClick="_gaq.push(['_trackEvent', 'Videos', 'ExternalForward', 'HR Tech Europe 2013 Teaser']);" href="http://www.youtube.com/embed/HaD35IlYOpE?rel=0" target="_blank"><img class="responsive-image" src="img/mobile/video-images/video-image-1.jpg" alt="HRTECH EUROPE 2013 TEASER"></a></div>
+      <div class="video-title">HR Tech Europe 2013 Teaser</div>
+    </div>
+    <!-- END: HR TECH EUROPE TEASER -->
+    <!-- HR TECH EUROPE 2012 -->
+    <div class="video-element">
+      <div class="video-image"><a onClick="_gaq.push(['_trackEvent', 'Videos', 'ExternalForward', 'Costumer Insights']);" href="http://www.youtube.com/embed/WWTaP1AXucA?rel=0" target="_blank"><img class="responsive-image" src="img/mobile/video-images/video-image-2.jpg" alt="HRTECH EUROPE 2012"></a></div>
+      <div class="video-title">Customer Insights</div>
+    </div>
+    <!-- END: HR TECH EUROPE 2012 -->
+    <!-- HR TECH EUROPE SNAPSHOT -->
+    <div class="video-element">
+      <div class="video-image"><a onClick="_gaq.push(['_trackEvent', 'Videos', 'ExternalForward', 'HR Tech Europe 2012']);" href="http://www.youtube.com/embed/kjnHAsaQJEk?rel=0" target="_blank"><img class="responsive-image" src="img/mobile/video-images/video-image-3.jpg" alt="HRTECH EUROPE SNAPSHOT"></a></div>
+      <div class="video-title">HR Tech Europe 2012</div>
+    </div>
+    <!-- END: HR TECH EUROPE SNAPSHOT -->
+    <!-- CUSTOMER INSIGHTS -->
+    <div class="video-element">
+      <div class="video-image"><a onClick="_gaq.push(['_trackEvent', 'Videos', 'ExternalForward', 'HR Tech Europe Snapshot']);" href="http://www.youtube.com/embed/WvpbDfMxDzs?rel=0" target="_blank"><img class="responsive-image" src="img/mobile/video-images/video-image-4.jpg" alt="CUSTOMER INSIGHTS"></a></div>
+      <div class="video-title">HR Tech Europe Snapshot</div>
+    </div>
+    <!-- END: CUSTOMER INSIGHTS -->
+  </div>
+</div>
+<!-- END: VIDEOS -->
+
+<!-- TESTIMONIALS -->
+<div id="testimonials-container">
+  <div id="testimonials-quote-sign"><img src="img/mobile/quote-sign.png" alt="quote"></div>
+  <div id="testimonials-carousel" class="slick-master-carousel">
+    <!-- TIMEWARNER -->
+    <div class="testimonials-carousel">
+      <div class="testimonials-quote"><p>"HR Tech Europe provides a comprehensive overview of what goes on across the globe… very inspiring and motivating."</p></div>
+      <div class="testimonials-logo"><img src="img/mobile/testimonials/timewarner.png" alt="TimeWarner"></div>
+    </div>
+    <!-- END: TIMEWARNER-->
+    <!-- XEROX -->
+    <div class="testimonials-carousel-element randomfade-div">
+      <div class="testimonials-quote"><p>"HR Tech Europe in my eyes is the best conference in the HR space globally!"</p></div>
+      <div class="testimonials-logo"><img src="img/mobile/testimonials/xerox.png" alt="Xerox"></div>
+    </div>
+    <!-- END: XEROX -->
+    <!-- KPN -->
+    <div class="testimonials-carousel-element randomfade-div">
+      <div class="testimonials-quote"><p>"HR Tech Europe has grown in less than 3 years. My expectations were delivered and surpassed. Looking forward to 2014!"</p></div>
+      <div class="testimonials-logo"><img src="img/mobile/testimonials/kpn.png" alt="KPN"></div>
+    </div>
+    <!-- END: KPN -->
+  </div>
+</div>
+<!-- END: TESTIMONIALS -->
+
+<!-- VENUE -->
+<div id="venue-container">
+  <h1 id="venue-container-title" class="header-dark">Venue</h1>
+  <p>Amsterdam is one of the top financial, HR and technology centers in Europe.</p>
+  <p>Amsterdam's premium conference venue, the Amsterdam RAI, provides a perfect space for exhibiting, learning and connecting.</p>
+  <div id="the-map" style="width:100%;height:400px;">  </div>
+  <!--<div id="google-maps-location-box">
+    <div id="amsterdam-rai">Amsterdam RAI</div>
+    <a href="https://www.google.com/maps/place/Amsterdam+RAI/@52.34259,4.888596,17z/data=!4m2!3m1!1s0x47c60a1f63d57e25:0xa08f37a724d09338?hl=en" target="_blank"><div id="view-in-google-maps">View in Google Maps</div></a>
+  </div>-->
+
+
+  <div class="button-container">
+    <a href="http://amsterdam.hrtecheurope.com/venue" target="_blank"><div class="view-button view-button-dark">View travel tips</div></a>
+  </div>  
+</div>
+<!-- END: VENUE -->
+
+<!-- STATISTICS -->
+<div id="statistics-background">
+  <div class="pattern">
+ 
+        <div id="statistics-container" class="counters">
+          <table>
+            <tr>
+              <td><div class="statistics-number red-text">0<strong data-to="2">0</strong></div><div class="statistics-text">Exciting Days</div></td>
+              <td><div class="statistics-number green-text"><sup>+</sup><strong data-to="32">0</strong></div><div class="statistics-text" style="padding-left: 5px;">Product Demo</div></td>
+            </tr>
+            <tr>
+              <td><div class="statistics-number blue-text"><sup>+</sup><span class="smaller-letter-spacing"><strong data-to="150">0</strong></span></div><div class="statistics-text" >Speakers</div></td>
+              <td><div class="statistics-number orange-text"><sup>+</sup><strong data-to="20">0</strong><sup>m</sup></div><div class="statistics-text">People Influenced</div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+  
+</div>
+<!-- END: STATISTICS -->
+
+<!-- CONTACT -->
+<div id="contact-container">
+  <h1 id="contact-title" class="header-dark">Contact</h1>
+  <div id="contact-signup">
+    <p>Sign Up for Updates</p>
+    
+   <form action="http://hrneurope.us4.list-manage.com/subscribe/post?u=c03cb8f11b1f34771fdd1747c&amp;id=c30aa7c5c8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div class="input-append">
+          <input type="hidden" name="retURL" value="http://amsterdam.hrtecheurope.com/thankyou.html" />
+            
+      <input type="text" id="newsletter-signupfield-amsterdam" name="EMAIL" placeholder="enter your email address">&nbsp;
+      <input onClick="_gaq.push(['_trackEvent',  'Footer', 'FromSubmission', 'SignUpToNewsletter']);" type="image" id="newsletter-submit-button" src="img/chevron.png" alt="OK" />
+	   
+	    </div>
+        </form>
+    
+    
+  </div>
+  <div id="contact-follow">
+    <p>Follow Us</p>
+    <a onClick="_gaq.push(['_trackEvent', 'Footer', 'ExternalForward', 'Twitter']);" href="https://twitter.com/hrtecheurope" target="_blank"><div id="twitter-and-hashtag">#hrtecheurope</div></a>
+    <div id="socialicons">
+      <table>
+        <tr>
+          <td><a onClick="_gaq.push(['_trackEvent', 'Footer', 'ExternalForward', 'Facebook']);" href="https://www.facebook.com/hrtecheu" target="_blank">
+            <div class="contact-social-icon" id="facebook-icon"></div>
+            </a></td>
+          <td><a onClick="_gaq.push(['_trackEvent', 'Footer', 'ExternalForward', 'LinkedIn']);" href="http://www.linkedin.com/groups/HR-Technology-Europe-Human-Resources-3930182/about" target="_blank">
+            <div class="contact-social-icon" id="linkedin-icon" style="position: relative; top: 3px;"></div>
+            </a></td>
+          <td><a onClick="_gaq.push(['_trackEvent', 'Footer', 'ExternalForward', 'SlideShare']);" href="http://www.slideshare.net/hrtecheurope">
+            <div class="contact-social-icon" id="flickr-icon" style="position: relative; top: 7px;"></div>
+            </a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="contact-general-enquiries">
+    <p>General Enquiries</p>
+    <p class="font-light" style="margin-top: 0; line-height: 30px;"><img id="image-phone" src="img/phone-icon.png" alt="phone: "> +36 1 201 14 69<br>
+    <img id="image-envelope" src="img/envelope-icon.png" alt="mail: "><a href="mailto:hrn@hrneurope.com"> hrn@hrneurope.com</a></p>
+  </div>
+</div>
+<!-- END: CONTACT -->
+<!-- COLORED STRIPES -->
+     <div class="colors-wrapper">
+      <div class="columns colored-stripe red" ></div>
+      <div class="columns colored-stripe orange" ></div>
+      <div class="columns colored-stripe green" ></div>
+      <div class="columns colored-stripe blue" ></div>
+    </div>
+<!-- END: COLORED STRIPES -->     
+<!-- FOOTER -->
+  <div id="footer">Copyright &copy; 2014 HRN Europe. All Rights Reserved.</div>
+<!-- END: FOOTER -->
+
+</div>
+<!-- END: MOBILE WRAPPER -->
+
+						
+<!-- SLICK-MASTER CAROUSEL JAVASCRIPT -->
+<script type="text/javascript" src="vendor/slick-master/slick/slick.min.js"></script>
+
+<!-- Include the Random Twitter fade-in fade-out function -->
+<script src="js/random-fadein-fadeout.js"></script>
+
+<!-- Include the Sidr JS -->
+<script src="vendor/sidr/jquery.sidr.min.js"></script>
+
+	<!-- Libs -->
+		<!-- Libs -->
+	 
+		<script src="js/plugins.js"></script>
+		<script src="vendor/jquery.easing.js"></script>
+		<script src="vendor/jquery.appear.js"></script>
+		<script src="vendor/jquery.cookie.js"></script>
+		
+		<script src="vendor/bootstrap.js"></script>
+		<script src="vendor/masonry.js"></script>
+		<script src="vendor/twitterjs/twitter.js"></script>
+		<script src="vendor/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+		<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="vendor/owl-carousel/owl.carousel.js"></script>
+		<script src="vendor/magnific-popup/magnific-popup.js"></script>
+		<script src="vendor/jquery.knob.js"></script>
+		<script src="vendor/jquery.stellar.js"></script>
+		<script src="vendor/jquery.validate.js"></script>
+		<script src="vendor/isotope/jquery.isotope.js"></script>
+
+		<!-- Current Page Scripts -->
+		<script src="js/views/view.home.js"></script>
+
+		<!-- Theme Initializer -->
+		<script src="js/theme.js"></script>
+
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+jQuery(document).ready(function ($) {
+
+    $('[data-popup-target]').click(function () {
+        $('html').addClass('overlay');
+        var activePopup = $(this).attr('data-popup-target');
+        $(activePopup).addClass('visible');
+
+    });
+
+    $(document).keyup(function (e) {
+        if (e.keyCode == 27 && $('html').hasClass('overlay')) {
+            clearPopup();
+        }
+    });
+
+    $('.popup-exit').click(function () {
+        clearPopup();
+
+    });
+
+    $('.popup-overlay').click(function () {
+        clearPopup();
+    });
+
+    function clearPopup() {
+        $('.popup.visible').addClass('transitioning').removeClass('visible');
+        $('html').removeClass('overlay');
+
+        setTimeout(function () {
+            $('.popup').removeClass('transitioning');
+        }, 200);
+    }
+
+});
+});//]]>  
+
+</script>
+
+
+
+<div id="example-popup" class="popup">
+    <div class="popup-body">	<span class="popup-exit"></span>
+
+        <div class="popup-content">
+            	<h2 class="popup-title">This section is still under construction. <br>
+Please check back later!</h2>
+
+            <p>press ESC to close this window</p>
+        </div>
+    </div>
+</div>
+<!-- Start of Async HubSpot Analytics Code -->
+  <script type="text/javascript">
+    (function(d,s,i,r) {
+      if (d.getElementById(i)){return;}
+      var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+      n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/412210.js';
+      e.parentNode.insertBefore(n, e);
+    })(document,"script","hs-analytics",300000);
+  </script>
+<!-- End of Async HubSpot Analytics Code -->
+</body>
+</html>
